@@ -1,5 +1,0 @@
--memberServlet
-    action : viewAlbums-, checkUser, viewCookies-, deleteCookies-, registerUser+
-
--cookie : usernameCookie, sessionIDCookie, member, userIdCookie, 
--session : username, message(status of member), member-, memberEdit, cartJSON, cart

@@ -1,0 +1,21 @@
+/* Nothing has att-changing */
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.last-bt {
+    float: right;
+    margin-right: 14px;
+}
+
+.last-bt a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.last-bt:hover a {
+    color: #fff;
+    text-decoration: none;
+}

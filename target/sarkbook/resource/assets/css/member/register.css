@@ -1,0 +1,112 @@
+/* HTML */
+
+:root {
+    --IguanaGreen: #6FC993
+}
+
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--IguanaGreen);
+    height: 100%;
+}
+
+body {
+    background-color: var(--IguanaGreen);
+}
+
+
+/* Common */
+
+.ml-a {
+    margin-left: auto;
+}
+
+.mr-a {
+    margin-right: auto;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+/* Main */
+
+.Employee-Form {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-row {}
+
+.submit-block {}
+
+.form-button {
+    width: 150px;
+    border-radius: 4px;
+    font-size: 0.85em;
+}
+
+.signup-bt {
+    margin-right: 24px;
+}
+
+.cancel-bt {}
+
+.button-submit {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 8px;
+}
+
+.text-left {
+    padding-top: 4px;
+}
+
+.mb__dk {
+    display: none;
+}
+
+
+/* Responsive */
+
+
+/* MOBILE, small TABLET */
+
+@media (max-width:859px) {
+    .text-left {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .mb__dk {
+        display: flex;
+        margin-bottom: 18px
+    }
+    .button-submit {
+        display: none;
+    }
+    .signup-bt {
+        flex: 1;
+        margin: 0;
+    }
+    label {
+        margin: 0;
+    }
+}

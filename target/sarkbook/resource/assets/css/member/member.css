@@ -1,0 +1,76 @@
+body {
+    overflow: hidden;
+}
+
+.mario {
+    position: relative;
+    top: -700px;
+    animation: run 6s linear infinite;
+    -webkit-animation: run 6s linear infinite;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.mario:nth-of-type(1) {
+    left: -400px;
+}
+
+.mario:nth-of-type(2) {
+    top: -680px;
+    left: -500px;
+}
+
+.mario__name {
+    color: black;
+    animation: run 6s linear infinite;
+    -webkit-animation: run 6s linear infinite;
+    pointer-events: none;
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+
+.mario__name:nth-of-type(2) {
+    position: absolute;
+    top: 80px;
+    left: -320px;
+}
+
+.mario__name:nth-of-type(1) {
+    position: absolute;
+    left: -120px;
+    top: 80px;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+}
+
+@keyframes run {
+    50% {}
+    100% {
+        transform: translateX(1700px);
+        -webkit-transform: translateX(1700px);
+        -moz-transform: translateX(1700px);
+        -ms-transform: translateX(1700px);
+        -o-transform: translateX(1700px);
+    }
+}
+
+@media (max-width:1300px) {
+    .mario {
+        display: none;
+    }
+}
